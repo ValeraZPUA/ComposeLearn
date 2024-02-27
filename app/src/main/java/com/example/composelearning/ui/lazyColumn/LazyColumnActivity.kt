@@ -1,4 +1,4 @@
-package com.example.composelearning.ui.lazuColumn
+package com.example.composelearning.ui.lazyColumn
 
 import android.os.Bundle
 import android.widget.Toast
@@ -22,7 +22,7 @@ class LazyColumnActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            com.example.composelearning.ui.compositionLocal.AppScreen()
+            AppScreen()
         }
     }
 }

@@ -14,10 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeLearning"
         tools:targetApi="31">
-
-<!--            android:name=".LazyColumnActivity"-->
         <activity
-            android:name=".ui.compositionLocal.CompositionLocalActivity"
+            android:name=".ui.materialAppTheme.MaterialAppThemeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ComposeLearning">

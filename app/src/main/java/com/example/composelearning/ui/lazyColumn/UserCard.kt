@@ -1,4 +1,4 @@
-package com.example.composelearning.ui.lazuColumn
+package com.example.composelearning.ui.lazyColumn
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
