@@ -1,4 +1,4 @@
-package com.example.composelearning
+package com.example.composelearning.ui.lazuColumn
 
 import android.os.Bundle
 import android.widget.Toast
@@ -15,10 +15,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.composelearning.model.UsersService
-import com.example.composelearning.ui.UserCard
+import com.example.composelearning.R
+import com.example.composelearning.model.lazuColumn.UsersService
 
-class MainActivity : ComponentActivity() {
+class LazyColumnActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

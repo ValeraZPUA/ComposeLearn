@@ -1,4 +1,4 @@
-package com.example.composelearning.model
+package com.example.composelearning.model.lazuColumn
 
 data class User(
     val id: Long,

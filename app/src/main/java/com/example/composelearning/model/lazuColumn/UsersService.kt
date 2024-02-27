@@ -1,6 +1,5 @@
-package com.example.composelearning.model
+package com.example.composelearning.model.lazuColumn
 
-import android.util.Log
 import com.github.javafaker.Faker
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -21,7 +20,6 @@ interface UsersService {
 
 private object UsersServiceImpl : UsersService {
 
-    private const val count = 100
     private val faker = Faker.instance(Random(0))
     private val images = mutableListOf(
         "https://www.kasandbox.org/programming-images/avatars/spunky-sam.png",

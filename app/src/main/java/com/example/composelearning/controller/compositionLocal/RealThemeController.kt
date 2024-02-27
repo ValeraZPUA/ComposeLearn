@@ -1,7 +1,7 @@
-package com.example.composelearning.controller
+package com.example.composelearning.controller.compositionLocal
 
-import com.example.composelearning.data.AppTheme
-import com.example.composelearning.data.ThemeDataSource
+import com.example.composelearning.data.compositionLocal.AppTheme
+import com.example.composelearning.data.compositionLocal.ThemeDataSource
 
 class RealThemeController(
     private val themeDataSource: ThemeDataSource

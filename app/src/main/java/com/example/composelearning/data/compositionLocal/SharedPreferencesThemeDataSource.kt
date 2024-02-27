@@ -1,10 +1,9 @@
-package com.example.composelearning.data
+package com.example.composelearning.data.compositionLocal
 
 import android.content.Context
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 
 class SharedPreferencesThemeDataSource(
     context: Context

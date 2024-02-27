@@ -1,4 +1,4 @@
-package com.example.composelearning.ui
+package com.example.composelearning.ui.lazuColumn
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -39,7 +39,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.example.composelearning.R
-import com.example.composelearning.model.User
+import com.example.composelearning.model.lazuColumn.User
 
 @Preview
 @Composable

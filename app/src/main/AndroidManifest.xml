@@ -15,7 +15,7 @@
         android:theme="@style/Theme.ComposeLearning"
         tools:targetApi="31">
 
-<!--            android:name=".MainActivity"-->
+<!--            android:name=".LazyColumnActivity"-->
         <activity
             android:name=".ui.compositionLocal.CompositionLocalActivity"
             android:exported="true"

@@ -1,4 +1,4 @@
-package com.example.composelearning.controller
+package com.example.composelearning.controller.compositionLocal
 
 object EmptyThemeController : AppThemeController {
 
