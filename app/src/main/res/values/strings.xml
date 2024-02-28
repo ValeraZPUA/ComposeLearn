@@ -5,4 +5,5 @@
     <string name="clicked_on">"Clicked on: %s"</string>
     <string name="title_activity_composition_local">CompositionLocalActivity</string>
     <string name="title_activity_constraint_layout">ConstraintLayoutActivity</string>
+    <string name="title_activity_reverse">ReverseActivity</string>
 </resources>

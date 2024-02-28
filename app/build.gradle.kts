@@ -7,6 +7,15 @@ android {
     namespace = "com.example.composelearning"
     compileSdk = 34
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("C:\\Users\\Droid\\.android\\debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.example.composelearning"
         minSdk = 24
@@ -22,8 +31,17 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getAt("release")
+//            isMinifyEnabled = true
+            postprocessing {
+                isRemoveUnusedResources = true
+                isRemoveUnusedCode = true
+                isObfuscate = false
+            }
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
         create("profile") {
             initWith(getByName("debug"))
@@ -65,12 +83,14 @@ dependencies {
 
     implementation("com.github.javafaker:javafaker:1.0.2")
     implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
